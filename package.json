@@ -1,0 +1,16 @@
+{
+  "name": "tododeployment",
+  "version": "1.0.0",
+  "description": "Simple todo aplication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Marcin Czaja",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-sslify": "^1.2.0"
+  }
+}
