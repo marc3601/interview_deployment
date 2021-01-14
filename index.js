@@ -4,12 +4,12 @@ const ip = process.env.IP || "localhost";
 const port = process.env.PORT || 3000;
 const path = require("path");
 const bodyParser = require("body-parser");
-// const enforce = require('express-sslify');
+const enforce = require('express-sslify');
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-// app.use(enforce.HTTPS({ trustProtoHeader: true }))
+app.use(enforce.HTTPS({ trustProtoHeader: true }))
 
 
 //ROUTES --------------------------------------------------------
